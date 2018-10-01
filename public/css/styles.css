@@ -47,17 +47,17 @@ main {
     margin-left: 10%;
     float: left;
     margin-bottom: 15px;    
-    transition: color, font-size 200ms;
+    transition: color 200ms, font-size 200ms;
 }
 
 .sticky-title {
     color: black;
-    font-size: 1.3em;
+    font-size: 1.3em;    
 }
 
 .no-sticky-title {
     color: white;
-    font-size: 1em;
+    font-size: 1em;    
 }
 
 .title {
