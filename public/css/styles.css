@@ -116,13 +116,19 @@ main {
 }
 
 .btn {
-    background-color: green;
+    background-color: #0082d9;
     border: none;
     padding: 10px;
     border-radius: 3px;
     color: white;
+    margin-right: 15px;
+}
+
+.btn:last-child{
+    margin-right: 0px;
 }
 
 .btn:hover {
-    background-color: darkgreen;
+    background-color: #0070ba;
+    cursor: pointer;
 }
