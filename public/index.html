@@ -4,20 +4,21 @@
 <head>
     <title>Resumen del pronostico de la tormenta Rosa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/styles.css">        
+    <link rel="stylesheet" href="./css/styles.css">     
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>   
 </head>
 
 <body>
     <header class="header" id="header">      
         <p class="no-sticky-title" id="title-sticky">Pronóstico huracan Rosa</p>  
         <nav>
-            <a href="#resumen">Resumen</a>
+            <a href="#titulo">Resumen</a>
             <a href="#descripcion">Descripción</a>
             <a href="#modelo">Modelo</a>
         </nav>
     </header>
     <main>
-        <section class="title">
+        <section id="titulo" class="title">
             <h1>Pronóstico huracán Rosa</h1>
             <h3>Dirección de Ciencia de Datos</h3>
             <h4>Elizabeth Brassea-Pérez</h4>
@@ -89,12 +90,19 @@
             <h2>Modelo</h2>
             <h3>Precipitación</h3>
 
-            <img id="precipitacion" src="" style="width:800px">
+            <img id="img-1" class="visible" src="http://smn.conagua.gob.mx/tools/GUI/modelos/modelos_numericos/Imagenes/wrf_00_precacum_sfcc_d24.png">
+            <img id="img-2" class="invisible" src="http://smn.conagua.gob.mx/tools/GUI/modelos/modelos_numericos/Imagenes/wrf_00_precacum_sfcc_d48.png">
+            <img id="img-3" class="invisible" src="http://smn.conagua.gob.mx/tools/GUI/modelos/modelos_numericos/Imagenes/wrf_00_precacum_sfcc_d72.png">
+            <div class="controls-buttons">
+                <button class="btn" onclick="show24()">24 horas</button>
+                <button class="btn" onclick="show48()">48 horas</button>
+                <button class="btn" onclick="show72()">72 horas</button>
+            </div>
             <p class="image-footer">
                 <strong>Figura 2.</strong> Visualización del modelo de Pronóstico Numérico proporcionado por la
                 CONAGUA. Los valores
                 corresponden a la precipitación.
-            </p>
+            </p>            
         </section>
         <section id="recomendaciones" class="article">
             <h2>Recomendaciones</h2>

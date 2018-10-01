@@ -4,6 +4,9 @@ window.onscroll = function() {myFunction()};
 // Get the header
 var header = document.getElementById("header");
 var title = document.getElementById("title-sticky");
+var img1 = document.getElementById("img-1");
+var img2 = document.getElementById("img-2");
+var img3 = document.getElementById("img-3");
 
 // Get the offset position of the navbar
 var sticky = header.offsetTop;
@@ -17,4 +20,31 @@ function myFunction() {
     title.classList.add("no-sticky-title");
     title.classList.remove("sticky-title");
   }
+}
+
+function show24() {
+  img1.classList.add("visible");
+  img1.classList.remove("invisible");
+  img2.classList.add("invisible");
+  img2.classList.remove("visible");
+  img3.classList.add("invisible");
+  img3.classList.remove("visible");
+}
+
+function show48() {
+  img1.classList.add("invisible");
+  img1.classList.remove("visible");
+  img2.classList.add("visible");
+  img2.classList.remove("invisible");
+  img3.classList.add("invisible");
+  img3.classList.remove("visible");
+}
+
+function show72() {
+  img1.classList.add("invisible");
+  img1.classList.remove("visible");
+  img2.classList.add("invisible");
+  img2.classList.remove("visible");
+  img3.classList.add("visible");
+  img3.classList.remove("invisible");
 }

@@ -85,7 +85,7 @@ main {
 .article img {
     display: block;
     margin: auto;
-    max-width: 80%;    
+    max-width: 70%;    
 }
 
 .article .image-footer {
@@ -95,4 +95,34 @@ main {
 .article table {
     margin: auto;
     margin-bottom: 25px;
+}
+
+.article h2 {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {    
+    display: none !important;
+}
+
+.controls-buttons {
+    margin: auto;
+    text-align: center;
+}
+
+.btn {
+    background-color: green;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: darkgreen;
 }
