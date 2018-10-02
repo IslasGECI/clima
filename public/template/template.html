@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resumen del pronostico de la tormenta Rosa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/styles.css">     
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>   
+</head>
+
+<body>
+    <header class="header" id="header">      
+        <p class="no-sticky-title" id="title-sticky">Pronóstico huracán Rosa</p>  
+        <nav>
+            <a href="#titulo">Resumen</a>
+            <a href="#descripcion">Descripción</a>
+            <a href="#modelo">Modelo</a>
+        </nav>
+    </header>
+    <main>
+        <section id="titulo" class="title">
+            <h1>Pronóstico huracán Rosa</h1>
+            <h3>Dirección de Ciencia de Datos</h3>
+            <h4>Elizabeth Brassea-Pérez</h4>
+            <h5>28 de septiembre, 2018</h5>
+        </section>
+        <section id="resumen" class="abstract">
+            <h2 class="text-center">Resumen</h4>
+                <p>
+                    El huracán “Rosa” actualmente se considera tormenta tropical. Como se puede apreciar en la Figura 
+                    1, la tormenta se encuentra afectando la costa noreste del estado de Baja California. El pronóstico
+                    de lluvia nos indica que la ciudad de Ensenada se encuentra fuera de riego en términos de los 
+                    efectos de precipitación relativos a “Rosa’’. Debido a que las condiciones meteorológicas no 
+                    indican un estado de alarma para la ciudad de Ensenada, las actividades programadas en GECI para la
+                    semana del 1 de octubre al 6 de octubre no tendrán mayores cambios.
+                </p>
+        </section>
+        <section id="descripcion" class="article">
+            <h2>Descripción</h2>
+            <p>
+                De acuerdo al aviso No. 34 (emitido el 1 de octubre a las 10:15h) de la Comisión Nacional del AGUA 
+                (CONAGUA), Servicio Meteorológico Nacional, la tormenta tropical “Rosa” se encuentra al suroeste de 
+                Baja California. A medida de prevención de riesgos se extiende la presente para brindarles más 
+                información acerca de las condiciones de este fenómeno. De acuerdo al centro National Oceanic and 
+                Atmospheric Administration (NOAA, 2018) se espera que las condiciones de tormenta de “Rosa” afecten la
+                porción central y norte de la Península de Baja California, especialmente las zonas de mayor elevación 
+                (Figura 2). Asimismo, se espera que estas condiciones se dispersen hacía el Golfo de California el día 
+                de hoy por la tarde (6:00 pm, hora del Pacífico). 
+            </p>
+            <p>
+                De acuerdo al centro National Oceanic and Atmospheric Administration (NOAA, 2018) la posición central
+                del ciclón
+                tropical es 16°53’20” N, -114°4’55” O, con trayectoria hacia la Península de Baja California. Se espera
+                que el fenómeno
+                llegue a las costas del estado de Baja California el martes 2 de octubre del presente a las 5:00 am
+                tiempo del Pacífico.
+                Es importante considerar que el huracán no representa un punto; si no que sus efectos pueden abarcar
+                varios cientos de
+                kilómetros a partir del centro. Asimismo, la CONAGUA (2018) informa que la circulación del huracán
+                reforzará el
+                potencial de lluvias en los estados de la Península de Baja California y el occidente del país.
+            </p>
+            <p>
+                Actualmente se encuentra a 855 km del suroeste Cabo San Lucas B.C.S., y a 505 km al oeste-suroeste de
+                la Isla Socorro,
+                Colima. Su desplazamiento actual es hacia el oeste (270°) con una velocidad de 19 km/h. Como parte de
+                las
+                recomendaciones se solicita extremas precauciones a la población en general, y principalmente a las
+                zonas
+                correspondientes a los estados de Baja California Sur, Sinaloa, Nayarit, Jalisco y Colima debido a las
+                lluvias, viento
+                y oleaje (incluyendo la navegación marítima). De acuerdo al pronóstico actual, se espera que “Rosa”
+                pase de Huracán
+                categoría I a Tormenta Tropical el día 1 de octubre a las 7:00h (360 km al suroeste de Punta Eugenia,
+                B.C.S.).
+            </p>
+            <p>La figura 1 muestra el cono de trayectoria probable. El cono indica las posibles trayectorias que podría
+                tomar el
+                huracán en una 60 al 70 % de las veces. El radio del cono está definido por el registro histórico de
+                los últimos
+                cinco años.
+            </p>
+            <img id="cono_cinco_dias" src="https://www.nhc.noaa.gov/storm_graphics/EP20/refresh/EP202018_3day_cone_no_line_and_wind+png/175806_3day_cone_no_line_and_wind.png">
+            <p class="image-footer">
+                <strong>Figura 1.</strong> Cono de trayectoria probable.
+            </p>
+        </section>
+        <section id="modelo" class="article">
+            <h2>Modelo</h2>
+            <h3>Precipitación</h3>
+
+            <img id="img-1" class="visible" src="http://smn.conagua.gob.mx/tools/GUI/modelos/modelos_numericos/Imagenes/wrf_00_precacum_sfcc_d24.png">
+            <img id="img-2" class="invisible" src="http://smn.conagua.gob.mx/tools/GUI/modelos/modelos_numericos/Imagenes/wrf_00_precacum_sfcc_d48.png">
+            <img id="img-3" class="invisible" src="http://smn.conagua.gob.mx/tools/GUI/modelos/modelos_numericos/Imagenes/wrf_00_precacum_sfcc_d72.png">
+            <div class="controls-buttons">
+                <button class="btn" onclick="show24()">24 horas</button>
+                <button class="btn" onclick="show48()">48 horas</button>
+                <button class="btn" onclick="show72()">72 horas</button>
+            </div>
+            <p class="image-footer">
+                <strong>Figura 2.</strong> Visualización del modelo de Pronóstico Numérico proporcionado por la
+                CONAGUA. Los valores
+                corresponden a la precipitación.
+            </p>            
+        </section>
+        <section id="recomendaciones" class="article">
+            <h2>Recomendaciones</h2>
+            <p>
+                De acuerdo a los parámetros que se presentan a continuación, el festejo del 20vo Aniversario de GECI no
+                será afectado por las lluvias (Tabla 1). El personal de campo que se encuentre en Isla Guadalupe no 
+                tendrá problemas de precipitación pero si habrá días con viento (Tabla 2). Por otra parte, el personal 
+                situado en Isla Natividad e Isla San Benito deberá tomar precauciones el día de hoy, ya que el máximo 
+                de precipitación pronosticado es  de 10 mm/h (Tabla 3). Asimismo, nuestros compañeros de GECI Unidad La 
+                Paz no tendrán que re-agendar su vuelo ya que la probabilidad de lluvia es baja (Tabla 4).
+            </p>
+            <p class="image-footer"><strong>Tabla 1.</strong> Pronóstico de variables meteorológicaspara Ensenada, Baja
+                California. Obtenidas de Windfinder.</p>
+                {{ tablita1 }}
+            <p class="image-footer"><strong>Tabla 2.</strong> Pronóstico de variables meteorológicaspara Ensenada, Baja
+                California. Obtenidas de Windfinder.</p>
+                {{ tablita2 }}
+            <p class="image-footer"><strong>Tabla 3.</strong> Pronóstico de variables meteorológicaspara Ensenada, Baja
+                California. Obtenidas de Windfinder.</p>
+                {{ tablita3 }}
+            <p class="image-footer"><strong>Tabla 4.</strong> Pronóstico de variables meteorológicaspara Ensenada, Baja
+                California. Obtenidas de Windfinder.</p>
+                {{ tablita4 }}
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
