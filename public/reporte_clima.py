@@ -20,6 +20,6 @@ tabla4 = pd.read_csv('../inst/extdata/clima_la_paz.csv')
 
 b = template.render(tablita1 = tabla1.to_html(index=False), tablita2 = tabla2.to_html(index=False),tablita3 = tabla3.to_html(index=False),tablita4 = tabla4.to_html(index=False),)
 
-with open('test_dos.html', 'w') as f:
+with open('index.html', 'w', encoding='utf-8') as f:
     f.write(b)
 
