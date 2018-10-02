@@ -1,0 +1,150 @@
+body {
+    background-color: #FAFAFA;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    position: sticky;
+    background-color: #ffffff;
+    height: 30px;    
+    top: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;    
+}
+.header img { 
+    display: block;   
+    float: left;    
+    margin: 0; 
+    margin-left: 10%;    
+    padding: 0;  
+    transition: height 300ms;    
+}
+
+.no-sticky-logo {
+    height: 25px;
+}
+
+.sticky-logo {
+    height: 20px;
+}
+
+.header nav {
+    float: right;
+    margin-right: 10%;    
+}
+
+.header nav a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: black;
+    border-bottom: white solid 1.5px;
+    padding-bottom: 3px;
+    transition: border 200ms;
+}
+
+.header nav a:hover {
+    border-bottom: #0082d9 solid 1.5px;
+}
+
+.header nav a:last-child {
+    text-decoration: none;
+    margin-right: 0px;
+}
+
+.header p {
+    margin: 0; 
+    padding: 0;       
+    margin-left: 10px;
+    float: left;
+    margin-bottom: 15px;    
+    transition: color 200ms, font-size 200ms;
+}
+
+.sticky-title {
+    color: black;
+    font-size: 1.3em;    
+}
+
+.no-sticky-title {
+    color: white;
+    font-size: 1em;    
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 1.8em;
+}
+
+.abstract {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.abstract p {
+    text-align: justify;
+}
+
+.article p {
+    text-align: justify;
+}
+
+.article img {
+    display: block;
+    margin: auto;
+    max-width: 70%;    
+}
+
+.article .image-footer {
+    text-align: center;
+}
+
+.article table {
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.article h2 {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {    
+    display: none !important;
+}
+
+.controls-buttons {
+    margin: auto;
+    text-align: center;
+}
+
+.btn {
+    background-color: #0082d9;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    margin-right: 15px;
+}
+
+.btn:last-child{
+    margin-right: 0px;
+}
+
+.btn:hover {
+    background-color: #0070ba;
+    cursor: pointer;
+}

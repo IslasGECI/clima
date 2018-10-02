@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resumen del pronostico de la tormenta Rosa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">     
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>   
+</head>
+
+<body>
+    <header class="header" id="header">      
+        <img src="img/logo_GECI_color.svg" id="logo" class="no-sticky-logo">
+        <p class="no-sticky-title" id="title-sticky">Pron�stico hurac�n Rosa</p>  
+        <nav>
+            <a href="#titulo">Resumen</a>
+            <a href="#descripcion">Descripci�n</a>
+            <a href="#modelo">Modelo</a>
+        </nav>
+    </header>
+    <main>
+        <section id="titulo" class="title">
+            <h1>Pron�stico hurac�n Rosa</h1>
+            <h3>Direcci�n de Ciencia de Datos</h3>
+            <h4>Elizabeth Brassea-P�rez</h4>
+            <h5>28 de septiembre, 2018</h5>
+        </section>
+        <section id="resumen" class="abstract">
+            <h2 class="text-center">Resumen</h4>
+                <p>
+                    El hurac�n �Rosa� actualmente se considera tormenta tropical. Como se puede apreciar en la Figura 
+                    1, la tormenta se encuentra afectando la costa noreste del estado de Baja California. El pron�stico
+                    de lluvia nos indica que la ciudad de Ensenada se encuentra fuera de riego en t�rminos de los 
+                    efectos de precipitaci�n relativos a �Rosa��. Debido a que las condiciones meteorol�gicas no 
+                    indican un estado de alarma para la ciudad de Ensenada, las actividades programadas en GECI para la
+                    semana del 1 de octubre al 6 de octubre no tendr�n mayores cambios.
+                </p>
+        </section>
+        <section id="descripcion" class="article">
+            <h2>Descripci�n</h2>
+            <p>
+                De acuerdo al aviso No. 34 (emitido el 1 de octubre a las 10:15h) de la Comisi�n Nacional del AGUA 
+                (CONAGUA), Servicio Meteorol�gico Nacional, la tormenta tropical �Rosa� se encuentra al suroeste de 
+                Baja California. A medida de prevenci�n de riesgos se extiende la presente para brindarles m�s 
+                informaci�n acerca de las condiciones de este fen�meno. De acuerdo al centro National Oceanic and 
+                Atmospheric Administration (NOAA, 2018) se espera que las condiciones de tormenta de �Rosa� afecten la
+                porci�n central y norte de la Pen�nsula de Baja California, especialmente las zonas de mayor elevaci�n 
+                (Figura 2). Asimismo, se espera que estas condiciones se dispersen hac�a el Golfo de California el d�a 
+                de hoy por la tarde (6:00 pm, hora del Pac�fico). 
+            </p>
+            <p>
+                De acuerdo al centro National Oceanic and Atmospheric Administration (NOAA, 2018) la posici�n central
+                del cicl�n
+                tropical es 16�53�20� N, -114�4�55� O, con trayectoria hacia la Pen�nsula de Baja California. Se espera
+                que el fen�meno
+                llegue a las costas del estado de Baja California el martes 2 de octubre del presente a las 5:00 am
+                tiempo del Pac�fico.
+                Es importante considerar que el hurac�n no representa un punto; si no que sus efectos pueden abarcar
+                varios cientos de
+                kil�metros a partir del centro. Asimismo, la CONAGUA (2018) informa que la circulaci�n del hurac�n
+                reforzar� el
+                potencial de lluvias en los estados de la Pen�nsula de Baja California y el occidente del pa�s.
+            </p>
+            <p>
+                Actualmente se encuentra a 855 km del suroeste Cabo San Lucas B.C.S., y a 505 km al oeste-suroeste de
+                la Isla Socorro,
+                Colima. Su desplazamiento actual es hacia el oeste (270�) con una velocidad de 19 km/h. Como parte de
+                las
+                recomendaciones se solicita extremas precauciones a la poblaci�n en general, y principalmente a las
+                zonas
+                correspondientes a los estados de Baja California Sur, Sinaloa, Nayarit, Jalisco y Colima debido a las
+                lluvias, viento
+                y oleaje (incluyendo la navegaci�n mar�tima). De acuerdo al pron�stico actual, se espera que �Rosa�
+                pase de Hurac�n
+                categor�a I a Tormenta Tropical el d�a 1 de octubre a las 7:00h (360 km al suroeste de Punta Eugenia,
+                B.C.S.).
+            </p>
+            <p>La figura 1 muestra el cono de trayectoria probable. El cono indica las posibles trayectorias que podr�a
+                tomar el
+                hurac�n en una 60 al 70 % de las veces. El radio del cono est� definido por el registro hist�rico de
+                los �ltimos
+                cinco a�os.
+            </p>
+            <img id="cono_cinco_dias" src="https://www.nhc.noaa.gov/storm_graphics/EP20/refresh/EP202018_3day_cone_no_line_and_wind+png/175806_3day_cone_no_line_and_wind.png">
+            <p class="image-footer">
+                <strong>Figura 1.</strong> Cono de trayectoria probable.
+            </p>
+        </section>
+        <section id="modelo" class="article">
+            <h2>Modelo</h2>
+            <h3>Precipitaci�n</h3>
+
+            <img id="img-1" class="visible" src="http://smn.conagua.gob.mx/tools/GUI/modelos/modelos_numericos/Imagenes/wrf_00_precacum_sfcc_d24.png">
+            <img id="img-2" class="invisible" src="http://smn.conagua.gob.mx/tools/GUI/modelos/modelos_numericos/Imagenes/wrf_00_precacum_sfcc_d48.png">
+            <img id="img-3" class="invisible" src="http://smn.conagua.gob.mx/tools/GUI/modelos/modelos_numericos/Imagenes/wrf_00_precacum_sfcc_d72.png">
+            <div class="controls-buttons">
+                <button class="btn" onclick="show24()">24 horas</button>
+                <button class="btn" onclick="show48()">48 horas</button>
+                <button class="btn" onclick="show72()">72 horas</button>
+            </div>
+            <p class="image-footer">
+                <strong>Figura 2.</strong> Visualizaci�n del modelo de Pron�stico Num�rico proporcionado por la
+                CONAGUA. Los valores
+                corresponden a la precipitaci�n.
+            </p> 
+            <h3>Viento</h3>
+
+            <img id="viento-img-1" class="visible" src="http://smn.conagua.gob.mx/tools/GUI/modelos/modelos_numericos/Imagenes/wrf_00_vien_sfcc_d24.png">
+            <img id="viento-img-2" class="invisible" src="http://smn.conagua.gob.mx/tools/GUI/modelos/modelos_numericos/Imagenes/wrf_00_vien_sfcc_d48.png">
+            <img id="viento-img-3" class="invisible" src="http://smn.conagua.gob.mx/tools/GUI/modelos/modelos_numericos/Imagenes/wrf_00_vien_sfcc_d72.png">
+            <div class="controls-buttons">
+                <button class="btn" onclick="showwind24()">24 horas</button>
+                <button class="btn" onclick="showwind48()">48 horas</button>
+                <button class="btn" onclick="showwind72()">72 horas</button>
+            </div>            
+            <p class="image-footer">
+                <strong>Figura 3.</strong> Visualizaci�n del modelo de Pron�stico Num�rico proporcionado por la CONAGUA. Los valores corresponden a la velocidad del viento.           
+        </section>
+        <section id="recomendaciones" class="article">
+            <h2>Recomendaciones</h2>
+            <p>
+                De acuerdo a los par�metros que se presentan a continuaci�n, el festejo del 20vo Aniversario de GECI no
+                ser� afectado por las lluvias (Tabla 1). El personal de campo que se encuentre en Isla Guadalupe no 
+                tendr� problemas de precipitaci�n pero si habr� d�as con viento (Tabla 2). Por otra parte, el personal 
+                situado en Isla Natividad e Isla San Benito deber� tomar precauciones el d�a de hoy, ya que el m�ximo 
+                de precipitaci�n pronosticado es  de 10 mm/h (Tabla 3). Asimismo, nuestros compa�eros de GECI Unidad La 
+                Paz no tendr�n que re-agendar su vuelo ya que la probabilidad de lluvia es baja (Tabla 4).
+            </p>
+            <p class="image-footer"><strong>Tabla 1.</strong> Pron�stico de variables meteorol�gicaspara Ensenada, Baja
+                California. Obtenidas de Windfinder.</p>
+                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Ensenada</th>
+      <th>Unnamed: 1</th>
+      <th>Precipitaci�n (mm/h)</th>
+      <th>Unnamed: 3</th>
+      <th>Oleaje (m)</th>
+      <th>Unnamed: 5</th>
+      <th>Viento (nudos)</th>
+      <th>Unnamed: 7</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fecha</td>
+      <td>D�a</td>
+      <td>Mediana</td>
+      <td>M�xima</td>
+      <td>Mediana</td>
+      <td>M�xima</td>
+      <td>Mediana</td>
+      <td>M�xima</td>
+    </tr>
+    <tr>
+      <td>1/10/2018</td>
+      <td>Lunes</td>
+      <td>0</td>
+      <td>0.33</td>
+      <td>1.9</td>
+      <td>2.5</td>
+      <td>10</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>2/10/2018</td>
+      <td>Martes</td>
+      <td>0</td>
+      <td>0.03</td>
+      <td>0.9</td>
+      <td>1.5</td>
+      <td>4</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>3/10/2018</td>
+      <td>Mi�rcoles</td>
+      <td>0</td>
+      <td>0.33</td>
+      <td>0.85</td>
+      <td>1</td>
+      <td>4</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>4/10/2018</td>
+      <td>Jueves</td>
+      <td>0</td>
+      <td>0.13</td>
+      <td>1</td>
+      <td>1.5</td>
+      <td>5</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>5/10/2018</td>
+      <td>Viernes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1.45</td>
+      <td>2</td>
+      <td>8</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>6/10/2018</td>
+      <td>S�bado</td>
+      <td>0</td>
+      <td>0.06</td>
+      <td>1.9</td>
+      <td>2.5</td>
+      <td>6</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table>
+            <p class="image-footer"><strong>Tabla 2.</strong> Pron�stico de variables meteorol�gicas para Islas Guadalupe. 
+                Obtenidas de Windfinder.</p>
+                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Isla Guadalupe</th>
+      <th>Unnamed: 1</th>
+      <th>Precipitaci�n (mm/h)</th>
+      <th>Unnamed: 3</th>
+      <th>Oleaje (m)</th>
+      <th>Unnamed: 5</th>
+      <th>Viento (nudos)</th>
+      <th>Unnamed: 7</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fecha</td>
+      <td>D�a</td>
+      <td>Mediana</td>
+      <td>M�xima</td>
+      <td>Mediana</td>
+      <td>M�xima</td>
+      <td>Mediana</td>
+      <td>M�xima</td>
+    </tr>
+    <tr>
+      <td>1/10/2018</td>
+      <td>Lunes</td>
+      <td>0</td>
+      <td>0.46</td>
+      <td>2</td>
+      <td>3</td>
+      <td>10.5</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>2/10/2018</td>
+      <td>Martes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.7</td>
+      <td>1.5</td>
+      <td>6</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>3/10/2018</td>
+      <td>Mi�rcoles</td>
+      <td>0</td>
+      <td>0.16</td>
+      <td>0.7</td>
+      <td>1.6</td>
+      <td>6</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>4/10/2018</td>
+      <td>Jueves</td>
+      <td>0</td>
+      <td>0.23</td>
+      <td>0.9</td>
+      <td>2.5</td>
+      <td>5.5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>5/10/2018</td>
+      <td>Viernes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1.2</td>
+      <td>2.7</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>6/10/2018</td>
+      <td>S�bado</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1.2</td>
+      <td>2.7</td>
+      <td>10</td>
+      <td>17</td>
+    </tr>
+  </tbody>
+</table>
+            <p class="image-footer"><strong>Tabla 3.</strong> Pron�stico de variables meteorol�gicas para Isla Cedros. 
+                Obtenidas de Windfinder.</p>
+                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Isla Cedros</th>
+      <th>Unnamed: 1</th>
+      <th>Precipitaci�n (mm/h)</th>
+      <th>Unnamed: 3</th>
+      <th>Oleaje (m)</th>
+      <th>Unnamed: 5</th>
+      <th>Viento (nudos)</th>
+      <th>Unnamed: 7</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fecha</td>
+      <td>D�a</td>
+      <td>Mediana</td>
+      <td>M�xima</td>
+      <td>Mediana</td>
+      <td>M�xima</td>
+      <td>Mediana</td>
+      <td>M�xima</td>
+    </tr>
+    <tr>
+      <td>1/10/2018</td>
+      <td>Lunes</td>
+      <td>1.5</td>
+      <td>10</td>
+      <td>3.25</td>
+      <td>4.2</td>
+      <td>22</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>2/10/2018</td>
+      <td>Martes</td>
+      <td>0</td>
+      <td>0.2</td>
+      <td>0.85</td>
+      <td>2.2</td>
+      <td>5</td>
+      <td>19.71</td>
+    </tr>
+    <tr>
+      <td>3/10/2018</td>
+      <td>Mi�rcoles</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.6</td>
+      <td>0.9</td>
+      <td>6.5</td>
+      <td>9.18</td>
+    </tr>
+    <tr>
+      <td>4/10/2018</td>
+      <td>Jueves</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.75</td>
+      <td>1.8</td>
+      <td>8.5</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>5/10/2018</td>
+      <td>Viernes</td>
+      <td>0</td>
+      <td>0.1</td>
+      <td>1.15</td>
+      <td>1.9</td>
+      <td>12</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>6/10/2018</td>
+      <td>S�bado</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1.2</td>
+      <td>2</td>
+      <td>11</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
+            <p class="image-footer"><strong>Tabla 4.</strong> Pron�stico de variables meteorol�gicaspara La Paz, Baja
+                California Sur. Obtenidas de Windfinder.</p>
+                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>La Paz</th>
+      <th>Unnamed: 1</th>
+      <th>Precipitaci�n (mm/h)</th>
+      <th>Unnamed: 3</th>
+      <th>Oleaje (m)</th>
+      <th>Unnamed: 5</th>
+      <th>Viento (nudos)</th>
+      <th>Unnamed: 7</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fecha</td>
+      <td>D�a</td>
+      <td>Mediana</td>
+      <td>M�xima</td>
+      <td>Mediana</td>
+      <td>M�xima</td>
+      <td>Mediana</td>
+      <td>M�xima</td>
+    </tr>
+    <tr>
+      <td>1/10/2018</td>
+      <td>Lunes</td>
+      <td>0</td>
+      <td>0.33</td>
+      <td>0.2</td>
+      <td>0.4</td>
+      <td>7</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>2/10/2018</td>
+      <td>Martes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.1</td>
+      <td>0.3</td>
+      <td>6.5</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3/10/2018</td>
+      <td>Mi�rcoles</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.1</td>
+      <td>0.2</td>
+      <td>4.99</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>4/10/2018</td>
+      <td>Jueves</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.1</td>
+      <td>0.3</td>
+      <td>4</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>5/10/2018</td>
+      <td>Viernes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.3</td>
+      <td>0.5</td>
+      <td>4</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>6/10/2018</td>
+      <td>S�bado</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.2</td>
+      <td>0.4</td>
+      <td>5.53</td>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
