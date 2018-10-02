@@ -14,9 +14,9 @@ configuracion_jinja: Environment = Environment(
 template: Template = configuracion_jinja.get_template(nombre_template_reporte)
 
 tabla1 = pd.read_csv('../inst/extdata/clima_ensenada.csv')
-tabla2 = pd.read_csv('../inst/extdata/clima_ensenada.csv')
-tabla3 = pd.read_csv('../inst/extdata/clima_ensenada.csv')
-tabla4 = pd.read_csv('../inst/extdata/clima_ensenada.csv')
+tabla2 = pd.read_csv('../inst/extdata/clima_guadalupe.csv')
+tabla3 = pd.read_csv('../inst/extdata/clima_cedros.csv')
+tabla4 = pd.read_csv('../inst/extdata/clima_la_paz.csv')
 
 b = template.render(tablita1 = tabla1.to_html(index=False), tablita2 = tabla2.to_html(index=False),tablita3 = tabla3.to_html(index=False),tablita4 = tabla4.to_html(index=False),)
 
