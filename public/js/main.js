@@ -7,6 +7,9 @@ var title = document.getElementById("title-sticky");
 var img1 = document.getElementById("img-1");
 var img2 = document.getElementById("img-2");
 var img3 = document.getElementById("img-3");
+var vientoimg1 = document.getElementById("viento-img-1");
+var vientoimg2 = document.getElementById("viento-img-2");
+var vientoimg3 = document.getElementById("viento-img-3");
 var logo = document.getElementById("logo");
 
 // Get the offset position of the navbar
@@ -52,4 +55,31 @@ function show72() {
   img2.classList.remove("visible");
   img3.classList.add("visible");
   img3.classList.remove("invisible");
+}
+
+function showwind24() {
+  vientoimg1.classList.add("visible");
+  vientoimg1.classList.remove("invisible");
+  vientoimg2.classList.add("invisible");
+  vientoimg2.classList.remove("visible");
+  vientoimg3.classList.add("invisible");
+  vientoimg3.classList.remove("visible");
+}
+
+function showwind48() {
+  vientoimg1.classList.add("invisible");
+  vientoimg1.classList.remove("visible");
+  vientoimg2.classList.add("visible");
+  vientoimg2.classList.remove("invisible");
+  vientoimg3.classList.add("invisible");
+  vientoimg3.classList.remove("visible");
+}
+
+function showwind72() {
+  vientoimg1.classList.add("invisible");
+  vientoimg1.classList.remove("visible");
+  vientoimg2.classList.add("invisible");
+  vientoimg2.classList.remove("visible");
+  vientoimg3.classList.add("visible");
+  vientoimg3.classList.remove("invisible");
 }
