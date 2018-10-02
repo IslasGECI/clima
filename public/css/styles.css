@@ -111,6 +111,12 @@ main {
 .article table {
     margin: auto;
     margin-bottom: 25px;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+.article thead {
+    border-bottom: 1px black solid;
 }
 
 .article h2 {
@@ -147,4 +153,8 @@ main {
 .btn:hover {
     background-color: #0070ba;
     cursor: pointer;
+}
+
+.reference a {
+    color: #0082d9;
 }
