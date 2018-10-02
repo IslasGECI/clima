@@ -15,12 +15,28 @@ main {
     height: 30px;    
     top: 0px;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 10px;    
+}
+.header img { 
+    display: block;   
+    float: left;    
+    margin: 0; 
+    margin-left: 10%;    
+    padding: 0;  
+    transition: height 300ms;    
+}
+
+.no-sticky-logo {
+    height: 25px;
+}
+
+.sticky-logo {
+    height: 20px;
 }
 
 .header nav {
     float: right;
-    margin-right: 10%;
+    margin-right: 10%;    
 }
 
 .header nav a {
@@ -29,11 +45,11 @@ main {
     color: black;
     border-bottom: white solid 1.5px;
     padding-bottom: 3px;
-    transition: border 250ms;
+    transition: border 200ms;
 }
 
 .header nav a:hover {
-    border-bottom: blue solid 1.5px;
+    border-bottom: #0082d9 solid 1.5px;
 }
 
 .header nav a:last-child {
@@ -44,7 +60,7 @@ main {
 .header p {
     margin: 0; 
     padding: 0;       
-    margin-left: 10%;
+    margin-left: 10px;
     float: left;
     margin-bottom: 15px;    
     transition: color 200ms, font-size 200ms;

@@ -7,6 +7,7 @@ var title = document.getElementById("title-sticky");
 var img1 = document.getElementById("img-1");
 var img2 = document.getElementById("img-2");
 var img3 = document.getElementById("img-3");
+var logo = document.getElementById("logo");
 
 // Get the offset position of the navbar
 var sticky = header.offsetTop;
@@ -16,9 +17,13 @@ function myFunction() {
   if (window.pageYOffset > sticky) {
     title.classList.add("sticky-title");
     title.classList.remove("no-sticky-title");
+    logo.classList.add("sticky-logo");
+    logo.classList.remove("no-sticky-logo");
   } else {
     title.classList.add("no-sticky-title");
     title.classList.remove("sticky-title");
+    logo.classList.add("no-sticky-logo");
+    logo.classList.remove("sticky-logo");
   }
 }
 
